@@ -55,7 +55,6 @@ function generatePassword() {
     consolidatedArr = [];
     return;
   } else {
-
     if (prefCap == true) {
       consolidatedArr = consolidatedArr.concat(capitalCase);
     }
