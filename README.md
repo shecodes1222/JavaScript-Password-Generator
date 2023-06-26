@@ -7,4 +7,4 @@
 - I learned that JavaScript is important and the foudnational skills learned during the challenge will help me succeed with more intricate and complicated designs. 
 
 ## Screenshot
-image: ![Project App Image](./Images/passwordgenerator.PNG)
+ ![Project App Image](./Images/passwordgenerator.PNG)
