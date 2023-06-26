@@ -29,3 +29,29 @@ function generatePassword() {
 
       //Getting input from the user
   let passLength = prompt("Enter the length of your password between 8-128 characters.");
+
+  if (isNaN(passLength)){
+    alert("Password length can be only between 8-128 characters. Please try again!!");
+    return;
+  } else
+  {
+    if (prefCap == true) {
+      consolidatedArr = consolidatedArr.concat(capitalCase);
+    }
+    if (prefSmall == true)
+    {
+      consolidatedArr = consolidatedArr.concat(smallCase);
+    }
+    if (prefSpec == true) {
+      consolidatedArr = consolidatedArr.concat(specialChar);
+    }
+    if (prefNum == true) {
+      consolidated = consolidatedArr.concat(numberArr);
+    }
+   }
+  
+  //Creating Password
+  for (var i = 0; i < passLength; i++)
+  text += consolidatedArr[Math.floor(Math.random() * consolidatedArr.length)];
+  return text;
+  }
