@@ -5,3 +5,6 @@
 - I built this project to practice my JavaScript language.
 - This challenge will help me better understand how JavaScript is a critical component of building an application.
 - I learned that JavaScript is important and the foudnational skills learned during the challenge will help me succeed with more intricate and complicated designs. 
+
+## Screenshot
+image: ![alt text](file:///C:/Users/jazzy/OneDrive/Pictures/passwordgenerator.PNG)
