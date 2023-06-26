@@ -18,7 +18,7 @@ generateBtn.addEventListener("click", writePassword);
 
 // Special Characters
 var capitalCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var smallCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numberArr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialChar = ["!", "#", "$", "&", "(", ")", "*", "+", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "}", "|", "~"];
 
@@ -30,11 +30,11 @@ function generatePassword() {
   //Getting input from the user
   let passLength = prompt("Enter the length of your password between 8-128 characters.");
 
-  if (isNaN(passLength)) {
-    alert("Password length can be only between 8-128 characters. Please input password again!");
+  if (isNaN(passLength)){
+    alert("Password length must be a number. Try again!");
     return;
   } else if (passLength < 8 || passLength > 128) {
-    alert("Password length can be only between 8 to 128 characters. Try again!");
+    alert("Password length should be between 8 to 128 characters. Try again!");
     return;
   };
 
@@ -54,7 +54,7 @@ function generatePassword() {
 
   //if none of the top choices are made then do the following
   if (!prefCap && !prefSmall && !prefSpec && !prefNum) {
-    alert("Must have atleast one choice of character set. Try again! ");
+    alert("Must have atleast one choice of character set. Try again!");
     consolidatedArr = [];
     return;
   } else {
