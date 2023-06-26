@@ -33,6 +33,9 @@ function generatePassword() {
   if (isNaN(passLength)) {
     alert("Password length can be only between 8-128 characters. Please input password again!");
     return;
+  } else if (passLength < 8 || passLength > 128) {
+    alert("Password length can be only between 8 to 128 characters. Try again!");
+    return;
   };
 
   //Combination of character preferences and building password
